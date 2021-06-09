@@ -1,15 +1,16 @@
+# frozen_string_literal: true
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
-
 gem 'bootsnap'
 gem 'doorkeeper'
+gem 'dotenv-rails', groups: %i[development test]
 gem 'jbuilder', '~> 2.7'
 gem 'oauth-plugin'
 gem 'pg'
 gem 'puma', '~> 4.1'
-gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
+gem 'rails', '~> 6.1.3', '>= 6.1.3.0'
 group :test do
   gem 'factory_bot_rails'
 end
@@ -27,3 +28,6 @@ group :development do
 end
 
 gem 'bcrypt', '~> 3.1'
+
+gem 'aws-sdk', '~> 3.0'
+gem 'mini_magick', '~> 4.11'

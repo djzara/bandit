@@ -10,6 +10,8 @@ Doorkeeper.configure do
 
   hash_application_secrets using: '::Doorkeeper::SecretStoring::BCrypt'
 
+  #fallback_to_plain_secrets
+
   grant_flows %w[client_credentials]
 
 end

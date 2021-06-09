@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+require 'doorkeeper/orm/active_record/application'
+
 desc 'Create an id/secret pair and persist'
 
 namespace :oauth do

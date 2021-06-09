@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   root to: 'bandit#index'
   namespace :api do
     namespace :v1 do
-      resources :accounts
       match 'data' => 'data#show', via: [:get]
+      match 'image' => 'image#store', via: [:post]
     end
   end
 end
